@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
+import os
 
 import random
 from datetime import date
@@ -58,5 +59,7 @@ def get_daily_song():
     mmdd = "0626"
     return jsonify({"date": mmdd})
 
+
 if __name__ == "__main__":
-    app.run(port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
