@@ -12,19 +12,19 @@ CORS(app)  # allow cross-origin from React frontend
 # Sample question list
 questions = [
     {
-        "question": "Which of the following literary works features the character of Jay Gatsby?",
-        "options": ["To Kill a Mockingbird", "The Great Gatsby", "1984", "Pride and Prejudice"],
-        "answer": 1
-    },
-    {
-        "question": "In what year did the World Wide Web become publicly available?",
-        "options": ["1985", "1991", "1995", "2000"],
-        "answer": 1
-    },
-    {
-        "question": "Which ancient civilization is credited with inventing concrete?",
-        "options": ["Ancient Egypt", "Ancient Greece", "Ancient Rome", "Mesopotamia"],
+        "question": "What is the largest organ in the human body?",
+        "options": ["Liver", "Brain", "Skin", "Heart"],
         "answer": 2
+    },
+    {
+        "question": "Which planet is known as the 'Red Planet'?",
+        "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+        "answer": 1
+    },
+    {
+        "question": "Who painted the famous artwork 'The Starry Night'?",
+        "options": ["Pablo Picasso", "Leonardo da Vinci", "Claude Monet", "Vincent van Gogh"],
+        "answer": 3
     }
 ]
 
@@ -56,7 +56,7 @@ def check_guess():
 def get_daily_song():
     today = date.today()
     mmdd = today.strftime("%m%d")
-    mmdd = "0626"
+    mmdd = "0704"
     return jsonify({"date": mmdd})
 
 
