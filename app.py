@@ -56,7 +56,7 @@ def check_guess():
 def get_daily_song():
     today = date.today()
     mmdd = today.strftime("%m%d")
-    mmdd = "0704"
+    mmdd = "0705"
     #mmdd = "0626"
     return jsonify({"date": mmdd})
 
